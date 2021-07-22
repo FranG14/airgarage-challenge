@@ -1,0 +1,15 @@
+
+[build]
+  publish = "build"
+  functions = "fxs/"
+
+[[redirects]]
+  from = "/cors-proxy/*"
+  to = ":splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/yelp"
+  to = "/.netlify/functions/yelp"
+  status = 200
